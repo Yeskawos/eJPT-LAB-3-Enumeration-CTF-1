@@ -16,7 +16,6 @@ El primer paso de la auditoría consistió en verificar la conectividad con la m
 * **Comprobación de red:** Confirmé la conectividad mediante trazas ICMP.
 
   *Evidencia:*
-  
   <img width="766" height="192" alt="ping" src="https://github.com/user-attachments/assets/17f445f1-ea28-44fb-9d50-65408e02b678" />
 
 * **Escaneo de Puertos:** Utilicé Nmap buscando en los 65.535 puertos (-p-). Esto fue crucial, ya que reveló los puertos estándar (22 SSH, 139/445 SMB) y descubrió un servicio oculto en un puerto no estándar (5554).
