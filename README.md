@@ -48,6 +48,7 @@ Con la confirmación del servicio SMB, procedí a la fase de enumeración de usu
 * **Acceso a Recurso Oculto:** Al autenticarme con las credenciales de josh, accedí a su directorio personal oculto (que compartía nombre con su usuario). Dentro de este recurso, encontré y extraje el archivo que contenía la segunda bandera y una pista sobre un servicio FTP.
 
   *Evidencia:*
+  
   <img width="819" height="370" alt="flag2" src="https://github.com/user-attachments/assets/7c840023-df0f-4afe-9365-4b6ea57f363e" />
 
 ## 3. Banner Grabbing y Movimiento Lateral (Flag 4)
@@ -104,6 +105,7 @@ La pista de la Flag 2 y el escaneo inicial de Nmap apuntaban a un servicio FTP e
 * **Obtención de Credenciales y Acceso:** Hydra logró descifrar exitosamente una de las contraseñas en cuestión de segundos.
 
   *Evidencia:*
+  
   <img width="854" height="230" alt="solucion_hydra" src="https://github.com/user-attachments/assets/11eff747-b239-429f-88d5-d7d08cea803a" />
 
 * **Extracción Final:** Con las credenciales válidas, inicié sesión en el FTP, listé los archivos y descargué la tercera y última bandera.
