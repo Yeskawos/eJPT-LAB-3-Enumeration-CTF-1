@@ -1,9 +1,13 @@
 # 🕵️‍♂️ Samba & FTP Enumeration CTF
 
 **Autor:** Córdoba
+
 **Fecha:** 26/02/2026
+
 **Categoría:** Network Enumeration / eJPT
+
 **Objetivo:** 192.17.162.3
+
 
 ## 1. Reconocimiento Inicial y Escaneo de Puertos
 
