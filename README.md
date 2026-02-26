@@ -16,6 +16,7 @@ El primer paso de la auditoría consistió en verificar la conectividad con la m
 * **Comprobación de red:** Confirmé la conectividad mediante trazas ICMP.
 
   *Evidencia:*
+  
   <img width="766" height="192" alt="ping" src="https://github.com/user-attachments/assets/17f445f1-ea28-44fb-9d50-65408e02b678" />
 
 * **Escaneo de Puertos:** Utilicé Nmap buscando en los 65.535 puertos (-p-). Esto fue crucial, ya que reveló los puertos estándar (22 SSH, 139/445 SMB) y descubrió un servicio oculto en un puerto no estándar (5554).
@@ -56,6 +57,7 @@ Aplicando la metodología de reutilización de credenciales, intenté autenticar
 * **Hallazgo:** Aunque la conexión fue rechazada por falta de permisos de terminal, el servidor reveló un Message of the Day (MOTD) o Banner configurado por el administrador, el cual contenía directamente la cuarta bandera.
 
   *Evidencia:*
+  
   <img width="699" height="495" alt="flag4" src="https://github.com/user-attachments/assets/7b73c692-648d-4e1f-b087-9c42aaa85879" />
 
 ## 4. Evasión de Restricciones en SMB (Flag 1)
@@ -70,6 +72,7 @@ El objetivo requería encontrar un recurso compartido con acceso anónimo. Sin e
 * **Identificación de Diccionarios:** En mi máquina atacante, localicé un directorio con diccionarios de fuerza bruta específicos para este entorno.
 
   *Evidencia:*
+  
   <img width="421" height="196" alt="carpeta-diccionarios" src="https://github.com/user-attachments/assets/8cf9690b-b0b2-49dc-80fd-7deada90acb5" />
 
 * **Fuerza Bruta de Directorios (Scripting):** Desarrollé un bucle en Bash utilizando el diccionario shares.txt y la herramienta smbclient para probar nombres de carpetas a ciegas. Logré descubrir el recurso oculto anónimo llamado pubshares.
